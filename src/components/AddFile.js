@@ -14,7 +14,7 @@ const AddFile = () => {
     }
 
     const deleteField = (id) => {
-        const updatedField = AddField.filter(item.id !== id);
+        const updatedField = AddField.filter(item => item.id !== id);
         setAddField(updatedField);
     }
 
@@ -45,7 +45,7 @@ const AddFile = () => {
              className='delete' 
              onClick={() => deleteField(field.id)} >
                 Delete
-             </button>
+             </button><br/>
           </div>)))
         }
 
